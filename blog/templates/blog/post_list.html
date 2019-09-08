@@ -1,4 +1,6 @@
 {% extends 'blog/base.html' %}
+{% load static %}
+
 
 {% block content %}
     {% for post in posts %}
@@ -10,4 +12,12 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
+{% endblock %}
+{% block extra %}
+<figure>
+        <img src={% static 'images/kot.jpg' %} alt="Django Cat" width="500">
+        <figcaption>Django Cat</figcaption>
+        <img src={% static 'images/pies.jpg' %} alt="Django Dog" width="500">
+        <figcaption>Django Dog</figcaption>
+      </figure>
 {% endblock %}
