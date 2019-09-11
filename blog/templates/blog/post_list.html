@@ -10,14 +10,17 @@
             </div>
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
+            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
         </div>
     {% endfor %}
 {% endblock %}
 {% block extra %}
-<figure>
-        <img src={% static 'images/kot.JPG' %} alt="Django Cat" width="500">
-        <figcaption>Django Cat</figcaption>
-        <img src={% static 'images/pies.JPG' %} alt="Django Dog" width="500">
-        <figcaption>Django Dog</figcaption>
-      </figure>
+      <figure class="images">
+        <img src={% static 'images/duck.JPG' %} alt="Yellow duck" width="500" style="margin: 5px; padding: 5px">
+
+        <img src={% static 'images/backpack.JPG' %} alt="backpack" width="500" style="margin: 5px; padding: 5px">
+
+      <img src={% static 'images/poster.JPG' %} alt="poster" width="500" style="margin: 5px; padding: 5px">
+
+    </figure>
 {% endblock %}

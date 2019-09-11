@@ -1,9 +1,13 @@
 
 
+    body {
+      background: white url("/static/images/gradient.JPG") no-repeat;
+      }
+
     .page-header {
-        background-color: #FF628A;
         margin-top: 0;
         padding: 20px 20px 20px 40px;
+        background: white url("/static/images/violet.JPG") no-repeat;
     }
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -14,14 +18,20 @@
 
     .content {
         margin-left: 40px;
+        font-family: 'Bookman', serif;
+        font-size: 13pt;
+        text-align: justify;
+        color: black;
     }
 
     h1, h2, h3, h4 {
-        font-family: 'Lobster', cursive;
+        font-family: 'Bookman', serif;
+        font-weight: bold
     }
 
     .date {
-        color: #B56277;
+        color: #38275E;
+        line-height: 60px;
     }
 
     .save {
@@ -46,3 +56,10 @@
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+    .comment {
+    margin: 20px 0px 20px 20px;
+}
+    .images {padding-top: 40px;
+      padding-right: 10px;
+      padding-bottom: 40px;
+      padding-left: 10px;}
