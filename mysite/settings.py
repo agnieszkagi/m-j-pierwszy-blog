@@ -114,6 +114,4 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# url to redirect after successfull login
-LOGIN_REDIRECT_URL = 'auth/logged_in'
-LOGIN_URL='/auth/login/'
+# url to redirect after successfull login -deleted
